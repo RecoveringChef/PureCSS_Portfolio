@@ -1,0 +1,56 @@
+body {
+    background-color: ivory;
+}
+
+header {
+   text-align: center;
+   color: black;   
+   font-family: ATypewriter;
+   
+}
+
+@font-face {
+    font-family: ATypewriter;
+    src: url(fonts/American\ Typewriter\ Regular.woff)
+}
+
+.typewriter {
+    /* animation: animated-text 2s steps(12,end) 1s 1 normal both;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 auto;
+    border-bottom: 2pt, solid, black; */
+} 
+#name{
+    animation: animated-text 2s steps(12,end) 1s 1 normal both;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 auto;
+}
+#title{
+    animation: animated-text 2s steps(12,end) 1s 1 normal both;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 auto;
+    border-bottom: 2pt, solid, black;
+}
+
+@keyframes animated-text{
+    from{width: 0;}
+    to{width: 472px;}
+  }
+
+.topic{
+    text-align: center;
+}
+
+
+footer {
+    bottom: 0;
+    position: fixed;
+}
+#copy{
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+}
