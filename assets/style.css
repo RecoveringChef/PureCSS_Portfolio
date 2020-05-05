@@ -1,7 +1,7 @@
 .wrapper{
     display: grid;
     grid-gap: 0;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 7fr;
     grid-template-areas:
       "header  header"
       "sidenav content"
@@ -9,13 +9,14 @@
 }
 
 body {
-    background: url(images/wildtextures-seamless-paper-texture.jpg);
+    background: url(images/marjanblan-_kUxT8WkoeY-unsplash.jpg);
 }
 
 header {
     text-align: center;
     color: black;   
     font-family: ATypewriter;
+    font-size: 1.3rem;
     grid-column: 1/3;
 }
 
@@ -26,7 +27,7 @@ header {
 
 @keyframes animated-text{
     from{width: 0;}
-    to{width: 472px;}
+    to{width: 90vw;}
   }
 
 .typewriter {
@@ -36,14 +37,14 @@ header {
     margin: 0 auto;
     border-bottom: 2pt, solid, black; */
 } 
-#name{
+/* #name{
     animation: animated-text 2s steps(12,end) 1s 1 normal both;
     white-space: nowrap;
     overflow: hidden;
     margin: 0 auto;
-}
+} */
 #title{
-    animation: animated-text 2.5s steps(38,end) 1s 1 normal both;
+    animation: animated-text 5s steps(38,end) 1.5s 1 normal both;
     white-space: nowrap;
     overflow: hidden;
     margin: 0 auto;
@@ -52,13 +53,8 @@ header {
 .content{
     padding-right: 6em;
     padding-left: 8em;
-    font-family: ATypewriter;
+    font-family: Tahoma;
     /* background: url(images/annie-spratt-Bf9PT5qVZvM-unsplash.jpg);  */
-}
-
-@font-face {
-    /* font-family: ATypewriter;
-    src: url(fonts/American\ Typewriter\ Regular.woff) */
 }
 
 
@@ -104,10 +100,10 @@ footer {
     margin: 0 auto;
     text-align: center;
     justify-content: center;
-    font-family: ATypewriter;
+    font-family: impact;
 }
 
-@font-face {
-    /* font-family: ATypewriter;
-    src: url(fonts/American\ Typewriter\ Regular.woff) */
-}
+a:hover {
+    color: blue;
+  }
+
