@@ -1,16 +1,22 @@
+body {
+    background: url(images/marjanblan-_kUxT8WkoeY-unsplash.jpg);
+    overflow: hidden; 
+}
+
+
 .wrapper{
+    height: 100vh;
+    width: 100vw;
     display: grid;
     grid-gap: 0;
     grid-template-columns: 1fr 7fr;
-    grid-template-areas:
+    /* grid-template-areas:
       "header  header"
       "sidenav content"
-      "footer  footer";
+      "footer  footer"; */
 }
 
-body {
-    background: url(images/marjanblan-_kUxT8WkoeY-unsplash.jpg);
-}
+
 
 header {
     text-align: center;
@@ -54,6 +60,8 @@ header {
     padding-right: 6em;
     padding-left: 8em;
     font-family: Tahoma;
+    overflow-y: scroll;
+    
     /* background: url(images/annie-spratt-Bf9PT5qVZvM-unsplash.jpg);  */
 }
 
@@ -64,8 +72,8 @@ header {
     font-family: ATypewriter;
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    
     grid-row: 2/4;
+    
     /* height: 100%; 
     width: 160px; 
     position: fixed; 
@@ -80,8 +88,11 @@ header {
 
 .sidenav a {
     padding: 6px 8px 6px 16px;
-    text-decoration: none;
+    /* text-decoration: none; */
     color: whitesmoke; 
+    position: static; 
+    top: 3;
+    bottom: 4;
     /* font-size: 25px; */
     /* display: block; */
   } 
@@ -92,6 +103,7 @@ footer {
     /* bottom: 0;
     position: fixed; */
     grid-column: 2/3;
+    height: 06vh;
 }
 
 
@@ -101,6 +113,7 @@ footer {
     text-align: center;
     justify-content: center;
     font-family: impact;
+    padding-top: 1vh;
 }
 
 a:hover {
