@@ -10,10 +10,10 @@ body {
     display: grid;
     grid-gap: 0;
     grid-template-columns: 1fr 7fr;
-    /* grid-template-areas:
+    /grid-template-areas:
       "header  header"
       "sidenav content"
-      "footer  footer"; */
+      "sidenav footer";
 }
 
 
@@ -65,7 +65,68 @@ header {
     /* background: url(images/annie-spratt-Bf9PT5qVZvM-unsplash.jpg);  */
 }
 
+.wrap-collabsible {
+  margin-bottom: 0.7rem 0;
+}
 
+input[type='checkbox'] {
+    display: none;
+  }
+
+  .lbl-toggle {
+    margin-top: 1.3rem;
+    display: block;
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: bolder;
+    padding: 0.2rem;
+    background: rgb(185, 185, 184);
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.25s ease-out;
+  }
+  
+  .lbl-toggle:hover {
+    color:whitesmoke;
+  }
+  
+  .lbl-toggle::after {
+    content: ' ';
+    display: inline-block;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid currentColor; 
+    vertical-align: middle;
+    /* margin-right: .7rem; */
+    transform: translateY(-2px);
+    transition: transform .2s ease-out;
+  }
+  
+  .toggle:checked + .lbl-toggle::after {
+    transform: rotate(90deg) translateX(-3px);
+  }
+
+  
+  .collapsible-content {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .25s ease-in-out;
+  }
+  
+  .toggle:checked + .lbl-toggle + .collapsible-content {
+    max-height: 100vh;
+  }
+  
+  
+  .toggle:checked + .lbl-toggle {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .collapsible-content .content-inner {
+s */
+  }
+  
 .sidenav {
     background: url(images/black-parchment-paper-texture.jpg);
     color: whitesmoke; 
