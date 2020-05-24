@@ -108,7 +108,7 @@ input[type='checkbox'] {
 
   
   .collapsible-content {
-    max-height: 0px;
+    max-height: 40px;
     overflow: hidden;
     transition: max-height .25s ease-in-out;
   }
@@ -161,8 +161,6 @@ s */
 
 
 footer {
-    /* bottom: 0;
-    position: fixed; */
     grid-column: 2/3;
     height: 06vh;
 }
