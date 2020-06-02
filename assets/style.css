@@ -74,13 +74,17 @@ input[type='checkbox'] {
   }
 
   .lbl-toggle {
-    margin-top: 1.3rem;
+    background: url(images/rippedPaper.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* transform: scaleX(-1); */
+    margin-top: 1rem;
     display: block;
     text-align: left;
     font-size: 1.5em;
     font-weight: bolder;
     padding: 0.2rem;
-    background: rgb(185, 185, 184);
+    /* background: rgb(185, 185, 184); */
     cursor: pointer;
     border-radius: 6px;
     transition: all 0.25s ease-out;
@@ -125,6 +129,22 @@ input[type='checkbox'] {
   
   .collapsible-content .content-inner {
 s */
+  }
+  
+  #contact{
+    /* border: red solid 3px; */
+    padding: 18px;
+  }
+  
+  #toCode{
+    /* border: red solid 3px; */
+    padding: 18px;
+  }
+  
+  .logos{
+    /* border: green solid 2px; */
+    padding: 22px;
+  
   }
   
 .sidenav {
