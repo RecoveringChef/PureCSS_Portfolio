@@ -57,8 +57,8 @@ header {
 }
 
 .content{
-    padding-right: 6em;
-    padding-left: 8em;
+    padding-right: 4em;
+    padding-left: 5em;
     font-family: Tahoma;
     overflow-y: scroll;
     
@@ -77,7 +77,6 @@ input[type='checkbox'] {
     background: url(images/rippedPaper.png);
     background-repeat: no-repeat;
     background-size: cover;
-    /* transform: scaleX(-1); */
     margin-top: 1rem;
     display: block;
     text-align: left;
@@ -118,7 +117,7 @@ input[type='checkbox'] {
   }
   
   .toggle:checked + .lbl-toggle + .collapsible-content {
-    max-height: 100vh;
+    max-height: max-content;
   }
   
   
@@ -199,3 +198,13 @@ a:hover {
     color: blue;
   }
 
+/* Small devices  */
+@media only screen and (max-width: 600px) {
+  .content{ padding-left: 1.5em; padding-right: 1em;}
+  
+  }
+
+/* Medium devices */
+@media only screen and (max-width: 768px) {
+  .content{ padding-left: 2em; padding-right: 2em;}
+  }
